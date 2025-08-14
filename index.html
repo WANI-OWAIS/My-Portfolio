@@ -1,213 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Wani Owais</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/77fd4ae049.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio Website - Wani Owais</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/77fd4ae049.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!-- Header Section -->
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="images/logo.png" class="logo" />
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-        <p>Software Engineer ...</p>
-        <h1>Hi, I'm <span>Wani</span><br />Owais From Kashmir</h1>
-      </div>
-    </div>
-  </div>
-
-  <!-- About Section -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="images/user.png" />
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>
-            I am a passionate and dedicated software engineering student with
-            a keen interest in web development and design. My journey in
-            technology began with a fascination for programming, and over
-            time, I have built skills in various languages and frameworks.
-            I love creating intuitive and visually appealing user interfaces,
-            and I am always exploring new tools to enhance my projects.
-          </p>
-
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
-            <p class="tab-links" onclick="opentab(event,'achievements')">Achievements</p>
-            <p class="tab-links" onclick="opentab(event,'education')">Education</p>
-          </div>
-
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>❖ Technical Skills</span> <br />
-                Programming Languages: C, C++, JavaScript <br />
-                Version Control & Collaboration: Git, GitHub <br />
-                Other Skills: Responsive Design, Debugging, and Problem Solving. <br />
-                Web Development: <br />
-                • Front-End: HTML, CSS, JavaScript <br />
-                • Back-End: Node.js, Express.js, MongoDB <br />
-                • Libraries & Frameworks: React, Tailwind CSS <br />
-              </li>
-              <li><span>❖ Shopify Store Design Expert</span><br />Create beautiful, converting online stores.</li>
-              <li><span>❖ Canva Design Proficiency</span><br />Design stunning visuals with ease.</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="achievements">
-            <ul>
-              <li><span>2024</span><br />❖ Code Clash (College Event) Runner-up – Led/Contributed to a team that secured second place in the college-level coding competition. </li>
-              <li><span>2022-Current</span><br />❖ Member Of HackerEarth & CSI</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>2022-2026</span><br />❖ B.Tech (CSE) | NMAM Institute of Technology</li>
-              <li><span>2021</span><br />❖ 12<sup>TH</sup> | JKBOSE | GHSS Tarhama</li>
-              <li><span>2019</span><br />❖ 10<sup>TH</sup> | JKBOSE | GHSS Tarhama</li>
-            </ul>
-          </div>
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer ...</p>
+          <h1>Hi, I'm <span>Wani</span><br />Owais From Kashmir</h1>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Services Section -->
-  <div id="services">
-    <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="services-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Web Development Mastery</h2>
-          <p>Build modern, responsive websites that provide seamless user experiences across all devices. Specializing
-            in clean code, innovative features, and cutting-edge technologies to bring your vision to life.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-brands fa-shopify"></i>
-          <h2>Shopify Store Design Expert</h2>
-          <p>Create beautiful, converting online stores tailored to your brand identity. From product setup to optimized
-            layouts, I ensure your e-commerce store attracts and retains customers effectively.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-swatchbook"></i>
-          <h2>Canva Design Proficiency</h2>
-          <p>Design stunning visuals with ease using Canva. Whether it's social media posts, banners, or marketing
-            materials, I craft eye-catching designs that captivate your audience and elevate your brand.</p>
-          <a href="#">Learn more</a>
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a passionate and dedicated software engineering student with
+              a keen interest in web development and design. My journey in
+              technology began with a fascination for programming, and over
+              time, I have built skills in various languages and frameworks. I
+              love creating intuitive and visually appealing user interfaces,
+              and I am always exploring new tools to enhance my projects.
+            </p>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab(event,'skills')"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab(event,'achievements')">
+                Achievements
+              </p>
+              <p class="tab-links" onclick="opentab(event,'education')">
+                Education
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>❖ Technical Skills</span> <br />
+                  Programming Languages: C, C++, JavaScript <br />
+                  Version Control & Collaboration: Git, GitHub <br />
+                  Other Skills: Responsive Design, Debugging, and Problem
+                  Solving. <br />
+                  Web Development: <br />
+                  • Front-End: HTML, CSS, JavaScript <br />
+                  • Back-End: Node.js, Express.js, MongoDB <br />
+                  • Libraries & Frameworks: React, Tailwind CSS <br />
+                </li>
+                <li>
+                  <span>❖ Shopify Store Design Expert</span><br />Create
+                  beautiful, converting online stores.
+                </li>
+                <li>
+                  <span>❖ Canva Design Proficiency</span><br />Design stunning
+                  visuals with ease.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="achievements">
+              <ul>
+                <li>
+                  <span>2024</span><br />❖ Code Clash (College Event) Runner-up
+                  – Led/Contributed to a team that secured second place in the
+                  college-level coding competition.
+                </li>
+                <li>
+                  <span>2022-Current</span><br />❖ Member Of HackerEarth & CSI
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-2026</span><br />❖ B.Tech (CSE) | NMAM Institute of
+                  Technology
+                </li>
+                <li>
+                  <span>2021</span><br />❖ 12<sup>TH</sup> | JKBOSE | GHSS
+                  Tarhama
+                </li>
+                <li>
+                  <span>2019</span><br />❖ 10<sup>TH</sup> | JKBOSE | GHSS
+                  Tarhama
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Portfolio Section -->
-  <div id="portfolio">
-    <div class="container">
-      <h1 class="sub-title">My Projects</h1>
-      <div class="work-list">
-        <!-- First 3 projects -->
-        <div class="work">
-          <img src="images/CodeEditor.png" alt="CodeEditor" />
-          <div class="layer">
-            <h2>RealTime-CodeEditor-Collaborative</h2>
-            <p>Collaborative editor with multi-language support.</p>
-            <a href="https://realtime-codeeditor-collaborative.onrender.com/"><i
-                class="fa-solid fa-up-right-from-square"></i></a>
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development Mastery</h2>
+            <p>
+              Build modern, responsive websites that provide seamless user
+              experiences across all devices. Specializing in clean code,
+              innovative features, and cutting-edge technologies to bring your
+              vision to life.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-shopify"></i>
+            <h2>Shopify Store Design Expert</h2>
+            <p>
+              Create beautiful, converting online stores tailored to your brand
+              identity. From product setup to optimized layouts, I ensure your
+              e-commerce store attracts and retains customers effectively.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-swatchbook"></i>
+            <h2>Canva Design Proficiency</h2>
+            <p>
+              Design stunning visuals with ease using Canva. Whether it's social
+              media posts, banners, or marketing materials, I craft eye-catching
+              designs that captivate your audience and elevate your brand.
+            </p>
+            <a href="#">Learn more</a>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="work">
-          <img src="images/work-1.png" alt="AI Chatbot" />
-          <div class="layer">
-            <h2>AI Chatbot</h2>
-            <p>Real-time chatbot built with responsive UI.</p>
-            <a href="https://wani-owais.github.io/Ai-ChatBot/"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="work">
-          <img src="images/work-2.png" alt="Shopify Store" />
-          <div class="layer">
-            <h2>Shopify Store</h2>
-            <p>SaraXcel online footwear store.</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <!-- Hidden Projects -->
-        <div class="more-projects" style="display: none;">
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <!-- First 3 projects -->
           <div class="work">
-            <img src="images/work-3.png" alt="Music App" />
+            <img src="images/job.png" alt="JobPortal" />
             <div class="layer">
-              <h2>Music App</h2>
-              <p>Spotify-inspired web music app.</p>
-              <a href="https://wani-owais.github.io/Spotify-Web-Clone/"><i
-                  class="fa-solid fa-up-right-from-square"></i></a>
+              <h2>Insider Jobs – Full Stack Job Portal</h2>
+              <p>
+                Full-stack job portal with advanced search and application
+                features.
+              </p>
+              <a href="https://insiderjobz.vercel.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
           </div>
 
-        </div>
-      </div>
-      <a href="#" class="btn" id="seeMoreBtn">See more</a>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fa-solid fa-envelope"></i> waniowais1100@gmail.com</p>
-          <p><i class="fa-solid fa-square-phone"></i> +91 7006471969</p>
-          <div class="social-icons">
-            <a href="https://github.com/WANI-OWAIS"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/owaishassanwani/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <div class="work">
+            <img src="images/CodeEditor.png" alt="CodeEditor" />
+            <div class="layer">
+              <h2>RealTime-CodeEditor-Collaborative</h2>
+              <p>Collaborative editor with multi-language support.</p>
+              <a href="https://realtime-codeeditor-collaborative.onrender.com/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
           </div>
-          <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+
+          <div class="work">
+            <img src="images/work-1.png" alt="AI Chatbot" />
+            <div class="layer">
+              <h2>AI Chatbot</h2>
+              <p>Real-time chatbot built with responsive UI.</p>
+              <a href="https://wani-owais.github.io/Ai-ChatBot/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.png" alt="Shopify Store" />
+            <div class="layer">
+              <h2>Shopify Store</h2>
+              <p>SaraXcel online footwear store.</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <!-- Hidden Projects -->
+          <div class="more-projects" style="display: none">
+            <div class="work">
+              <img src="images/work-3.png" alt="Music App" />
+              <div class="layer">
+                <h2>Music App</h2>
+                <p>Spotify-inspired web music app.</p>
+                <a href="https://wani-owais.github.io/Spotify-Web-Clone/"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-right">
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name" required />
-            <input type="email" name="Email" placeholder="Your Email" required />
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
-        </div>
+        <a href="#" class="btn" id="seeMoreBtn">See more</a>
       </div>
     </div>
-    <div class="copyright">
-      <p>Copyright © 2024. Made with <i class="fa-solid fa-heart"></i> by Wani Owais.</p>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> waniowais1100@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> +91 7006471969</p>
+            <div class="social-icons">
+              <a href="https://github.com/WANI-OWAIS"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/owaishassanwani/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2024. Made with <i class="fa-solid fa-heart"></i> by Wani
+          Owais.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!-- JS -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
 </html>
