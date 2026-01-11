@@ -149,7 +149,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 **Wani Owais**
-- **Email**: [waniowais1100@gmail.com](mailto:waniowais1100@gmail.com)
+- **Email**: [owaishassanwani@gmail.com](mailto:owaishassanwani@gmail.com)
 - **Phone**: +91 7006471969
 - **LinkedIn**: [Owais Hassan Wani](https://www.linkedin.com/in/owaishassanwani/)
 - **GitHub**: [WANI-OWAIS](https://github.com/WANI-OWAIS)
