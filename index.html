@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Website - Wani Owais</title>
+    <meta
+      name="description"
+      content="Owais Hassan Wani – Full Stack MERN Developer. Building scalable web applications, REST APIs, and real-time systems."
+    />
+    <title>Owais Hassan Wani | Full Stack MERN Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/77fd4ae049.js"
@@ -12,44 +22,106 @@
   </head>
 
   <body>
-    <!-- Header Section -->
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/logo.png" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>Software Engineer ...</p>
-          <h1>Hi, I'm <span>Wani</span><br />Owais From Kashmir</h1>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#header" class="nav-logo">Owais<span>.</span></a>
+        <ul id="sidemenu">
+          <li><a href="#header" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Expertise</a></li>
+          <li><a href="#portfolio" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <a href="#contact" class="btn btn-sm nav-cta">Hire Me</a>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="header">
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="hero-badge"
+            ><span class="dot"></span> Open to opportunities</span
+          >
+          <h1>
+            Hi, I'm <span class="gradient-text">Owais Hassan Wani</span>
+          </h1>
+          <h2 class="hero-role"><span id="typed"></span><span class="cursor">|</span></h2>
+          <p class="hero-desc">
+            Computer Science undergraduate specializing in full stack MERN
+            development — I build scalable web applications, design clean REST
+            APIs, and ship real-time systems with a focus on performance.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">
+              View My Work <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="images/my-cv.pdf" download class="btn btn-outline">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a
+              href="https://github.com/WANI-OWAIS"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/owaishassanwani/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="mailto:owaishassanwani@gmail.com" aria-label="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-frame">
+            <img src="images/user.png" alt="Owais Hassan Wani" />
+          </div>
+          <div class="floating-card card-tech">
+            <i class="fa-brands fa-react"></i> MERN Stack
+          </div>
+          <div class="floating-card card-status">
+            <i class="fa-solid fa-bolt"></i> Real-Time Systems
+          </div>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- About Section -->
-    <div id="about">
+    <section id="about">
       <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user.png" />
+        <div class="section-head reveal">
+          <span class="section-label">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-col-1 reveal">
+            <div class="about-photo">
+              <img src="images/user.png" alt="Owais Hassan Wani" />
+            </div>
           </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              I am a passionate and dedicated software engineering student with
-              a keen interest in web development and design. My journey in
-              technology began with a fascination for programming, and over
-              time, I have built skills in various languages and frameworks. I
-              love creating intuitive and visually appealing user interfaces,
-              and I am always exploring new tools to enhance my projects.
+          <div class="about-col-2 reveal">
+            <p class="about-intro">
+              I'm a Computer Science undergraduate at NMAM Institute of
+              Technology specializing in <strong>full stack MERN
+              development</strong>. I have hands-on experience building
+              scalable web applications, designing REST APIs, and implementing
+              real-time systems — from JWT authentication and Razorpay payment
+              integration to live collaboration with Socket.IO. I care about
+              performance, clean architecture, and shipping
+              production-ready products.
             </p>
 
             <div class="tab-titles">
@@ -68,219 +140,479 @@
             </div>
 
             <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>❖ Technical Skills</span> <br />
-                  Programming Languages: C, C++, JavaScript <br />
-                  Version Control & Collaboration: Git, GitHub <br />
-                  Other Skills: Responsive Design, Debugging, and Problem
-                  Solving. <br />
-                  Web Development: <br />
-                  • Front-End: HTML, CSS, JavaScript <br />
-                  • Back-End: Node.js, Express.js, MongoDB <br />
-                  • Libraries & Frameworks: React, Tailwind CSS <br />
-                </li>
-                <li>
-                  <span>❖ Shopify Store Design Expert</span><br />Create
-                  beautiful, converting online stores.
-                </li>
-                <li>
-                  <span>❖ Canva Design Proficiency</span><br />Design stunning
-                  visuals with ease.
-                </li>
-              </ul>
+              <div class="skill-group">
+                <h4>Languages</h4>
+                <div class="chips">
+                  <span class="chip">C</span>
+                  <span class="chip">C++</span>
+                  <span class="chip">JavaScript</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h4>Frontend</h4>
+                <div class="chips">
+                  <span class="chip">HTML5</span>
+                  <span class="chip">CSS3</span>
+                  <span class="chip">React.js</span>
+                  <span class="chip">Tailwind CSS</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h4>Backend &amp; Databases</h4>
+                <div class="chips">
+                  <span class="chip">Node.js</span>
+                  <span class="chip">Express.js</span>
+                  <span class="chip">REST APIs</span>
+                  <span class="chip">Socket.IO</span>
+                  <span class="chip">MongoDB</span>
+                  <span class="chip">SQL</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h4>Tools &amp; Platforms</h4>
+                <div class="chips">
+                  <span class="chip">Git</span>
+                  <span class="chip">GitHub</span>
+                  <span class="chip">Clerk</span>
+                  <span class="chip">Sentry</span>
+                  <span class="chip">Cloudinary</span>
+                  <span class="chip">Razorpay</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h4>Core Concepts</h4>
+                <div class="chips">
+                  <span class="chip">Data Structures</span>
+                  <span class="chip">Algorithms</span>
+                  <span class="chip">OOP</span>
+                  <span class="chip">Operating Systems</span>
+                </div>
+              </div>
             </div>
 
             <div class="tab-contents" id="achievements">
-              <ul>
+              <ul class="timeline">
                 <li>
-                  <span>2024</span><br />❖ Code Clash (College Event) Runner-up
-                  – Led/Contributed to a team that secured second place in the
-                  college-level coding competition.
+                  <span class="timeline-date">2025</span>
+                  <div>
+                    <h4>Oracle Cloud Infrastructure</h4>
+                    <p>Certified Data Science Professional</p>
+                  </div>
                 </li>
                 <li>
-                  <span>2022-Current</span><br />❖ Member Of HackerEarth & CSI
+                  <span class="timeline-date">2024</span>
+                  <div>
+                    <h4>Runner-Up – Code Clash</h4>
+                    <p>
+                      Inter-college coding competition; secured second place
+                      among 50+ participants.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-date">2022 – Present</span>
+                  <div>
+                    <h4>Executive Member – CSI, NMAMIT</h4>
+                    <p>
+                      Helped plan and execute 5+ events for a community of
+                      200+ students.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-date">Certifications</span>
+                  <div>
+                    <h4>MERN Stack Development</h4>
+                    <p>
+                      Sheriyans Coding School · Front-End Web Development
+                      Bootcamp – Udemy
+                    </p>
+                  </div>
                 </li>
               </ul>
             </div>
 
             <div class="tab-contents" id="education">
-              <ul>
+              <ul class="timeline">
                 <li>
-                  <span>2022-2026</span><br />❖ B.Tech (CSE) | NMAM Institute of
-                  Technology
+                  <span class="timeline-date">2022 – 2026</span>
+                  <div>
+                    <h4>B.Tech, Computer Science &amp; Engineering</h4>
+                    <p>NMAM Institute of Technology, Nitte ·</p>
+                  </div>
                 </li>
                 <li>
-                  <span>2021</span><br />❖ 12<sup>TH</sup> | JKBOSE | GHSS
-                  Tarhama
+                  <span class="timeline-date">2022</span>
+                  <div>
+                    <h4>Senior Secondary (Class XII)</h4>
+                    <p>GHSS Tarhama ·</p>
+                  </div>
                 </li>
                 <li>
-                  <span>2019</span><br />❖ 10<sup>TH</sup> | JKBOSE | GHSS
-                  Tarhama
+                  <span class="timeline-date">2020</span>
+                  <div>
+                    <h4>Secondary (Class X)</h4>
+                    <p>GHSS Tarhama ·</p>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Services Section -->
-    <div id="services">
+    <section id="services">
       <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <div class="section-head reveal">
+          <span class="section-label">Expertise</span>
+          <h2 class="section-title">What I Do</h2>
+        </div>
         <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Development Mastery</h2>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Full Stack Development</h3>
             <p>
-              Build modern, responsive websites that provide seamless user
-              experiences across all devices. Specializing in clean code,
-              innovative features, and cutting-edge technologies to bring your
-              vision to life.
+              End-to-end web applications with the MERN stack — React.js
+              frontends, Node.js/Express.js backends, and MongoDB data models.
+              Responsive, performant, and built with clean architecture.
             </p>
-            <a href="#">Learn more</a>
           </div>
-          <div>
-            <i class="fa-brands fa-shopify"></i>
-            <h2>Shopify Store Design Expert</h2>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>REST API Design</h3>
             <p>
-              Create beautiful, converting online stores tailored to your brand
-              identity. From product setup to optimized layouts, I ensure your
-              e-commerce store attracts and retains customers effectively.
+              Secure, well-structured REST APIs with JWT authentication,
+              role-based access control, payment integration (Razorpay), and
+              production error monitoring with Sentry.
             </p>
-            <a href="#">Learn more</a>
           </div>
-          <div>
-            <i class="fa-solid fa-swatchbook"></i>
-            <h2>Canva Design Proficiency</h2>
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Real-Time Applications</h3>
             <p>
-              Design stunning visuals with ease using Canva. Whether it's social
-              media posts, banners, or marketing materials, I craft eye-catching
-              designs that captivate your audience and elevate your brand.
+              Live, collaborative experiences powered by Socket.IO —
+              bidirectional sync, multi-user sessions, and low-latency
+              real-time features that scale.
             </p>
-            <a href="#">Learn more</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Portfolio Section -->
-    <div id="portfolio">
+    <section id="portfolio">
       <div class="container">
-        <h1 class="sub-title">My Projects</h1>
+        <div class="section-head reveal">
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
         <div class="work-list">
-          <!-- First 3 projects -->
-          <div class="work">
-            <img src="images/job.png" alt="JobPortal" />
-            <div class="layer">
-              <h2>Insider Jobs – Full Stack Job Portal</h2>
+          <div class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="images/CodeEditor.png"
+                alt="Real-Time Collaborative Code Editor"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Real-Time Collaborative Code Editor</h3>
               <p>
-                Full-stack job portal with advanced search and application
-                features.
+                Multi-user code editor supporting 10+ concurrent sessions with
+                real-time bidirectional sync under 100ms latency and
+                in-browser compilation for 5+ languages.
               </p>
-              <a href="https://insiderjobz.vercel.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
+              <div class="project-tags">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Socket.IO</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/WANI-OWAIS/RealTime-CodeEditor-Collaborative"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+                <a
+                  href="https://realtime-codeeditor-collaborative.onrender.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="live"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo</a
+                >
+              </div>
             </div>
           </div>
 
-          <div class="work">
-            <img src="images/CodeEditor.png" alt="CodeEditor" />
-            <div class="layer">
-              <h2>RealTime-CodeEditor-Collaborative</h2>
-              <p>Collaborative editor with multi-language support.</p>
-              <a href="https://realtime-codeeditor-collaborative.onrender.com/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
+          <div class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="images/studynotion.png"
+                alt="StudyNotion EdTech Platform"
+              />
+            </div>
+            <div class="project-content">
+              <h3>StudyNotion – EdTech Platform</h3>
+              <p>
+                Full stack edtech platform with Student, Instructor, and Admin
+                roles — JWT + OTP authentication, Razorpay payments, 8+
+                MongoDB schemas, and 20+ REST API endpoints.
+              </p>
+              <div class="project-tags">
+                <span>React.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>Razorpay</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/WANI-OWAIS/StudyNotion-EdTech"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+                <a
+                  href="https://study-notion-ed-tech-livid.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="live"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo</a
+                >
+              </div>
             </div>
           </div>
 
-          <div class="work">
-            <img src="images/work-1.png" alt="AI Chatbot" />
-            <div class="layer">
-              <h2>AI Chatbot</h2>
-              <p>Real-time chatbot built with responsive UI.</p>
-              <a href="https://wani-owais.github.io/Ai-ChatBot/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
+          <div class="project-card reveal">
+            <div class="project-image">
+              <img src="images/job.png" alt="Insider Jobs – Job Portal" />
+            </div>
+            <div class="project-content">
+              <h3>Insider Jobs – Job Portal</h3>
+              <p>
+                Job portal where recruiters post and manage 50+ listings with
+                candidate tracking, Clerk role-based authentication, and
+                Sentry monitoring catching 100% of runtime exceptions.
+              </p>
+              <div class="project-tags">
+                <span>React.js</span>
+                <span>Express.js</span>
+                <span>Clerk</span>
+                <span>Sentry</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/WANI-OWAIS/Job-Portal"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+                <a
+                  href="https://insiderjobz.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="live"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo</a
+                >
+              </div>
             </div>
           </div>
 
           <!-- Hidden Projects -->
           <div class="more-projects" style="display: none">
-            <div class="work">
-              <img src="images/work-2.png" alt="Shopify Store" />
-              <div class="layer">
-                <h2>Shopify Store</h2>
-                <p>SaraXcel online footwear store.</p>
-                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/work-1.png" alt="AI Chatbot" />
+              </div>
+              <div class="project-content">
+                <h3>AI Chatbot</h3>
+                <p>
+                  Real-time chatbot with a clean, responsive interface built
+                  from scratch with vanilla web technologies.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/WANI-OWAIS/Ai-ChatBot"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="fa-brands fa-github"></i> Code</a
+                  >
+                  <a
+                    href="https://wani-owais.github.io/Ai-ChatBot/"
+                    target="_blank"
+                    rel="noopener"
+                    class="live"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Live Demo</a
+                  >
+                </div>
               </div>
             </div>
 
-            <div class="work">
-              <img src="images/work-3.png" alt="Music App" />
-              <div class="layer">
-                <h2>Music App</h2>
-                <p>Spotify-inspired web music app.</p>
-                <a href="https://wani-owais.github.io/Spotify-Web-Clone/"
-                  ><i class="fa-solid fa-up-right-from-square"></i
-                ></a>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/work-3.png" alt="Music App" />
+              </div>
+              <div class="project-content">
+                <h3>Music App</h3>
+                <p>
+                  Spotify-inspired web music player with playlist support and
+                  a polished, responsive UI.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://wani-owais.github.io/Spotify-Web-Clone/"
+                    target="_blank"
+                    rel="noopener"
+                    class="live"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Live Demo</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <a href="#" class="btn" id="seeMoreBtn">See more</a>
+        <a href="#" class="btn btn-outline see-more" id="seeMoreBtn"
+          >See More Projects</a
+        >
       </div>
-    </div>
+    </section>
 
     <!-- Contact Section -->
-    <div id="contact">
+    <section id="contact">
       <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-envelope"></i> waniowais1100@gmail.com</p>
-            <p><i class="fa-solid fa-square-phone"></i> +91 7006471969</p>
+        <div class="section-head reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's Work Together</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-left reveal">
+            <p class="contact-blurb">
+              Have a project in mind, an opportunity to discuss, or just want
+              to say hello? My inbox is always open — I'll get back to you as
+              soon as I can.
+            </p>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:owaishassanwani@gmail.com"
+                  >owaishassanwani@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+917006471969">+91 7006471969</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <span>Kashmir, India</span>
+              </div>
+            </div>
             <div class="social-icons">
-              <a href="https://github.com/WANI-OWAIS"
+              <a
+                href="https://github.com/WANI-OWAIS"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
                 ><i class="fa-brands fa-github"></i
               ></a>
-              <a href="https://www.linkedin.com/in/owaishassanwani/"
-                ><i class="fa-brands fa-linkedin"></i
+              <a
+                href="https://www.linkedin.com/in/owaishassanwani/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
               ></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
-            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
           </div>
-          <div class="contact-right">
+          <div class="contact-right reveal">
             <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
+              <div class="form-row">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
               <textarea
                 name="Message"
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
+              <button type="submit" class="btn btn-primary">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
             </form>
             <span id="msg"></span>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>
-          Copyright © 2024. Made with <i class="fa-solid fa-heart"></i> by Wani
-          Owais.
-        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-inner">
+        <a href="#header" class="nav-logo">Owais<span>.</span></a>
+        <p>© 2026 Owais Hassan Wani. Built with passion and clean code.</p>
+        <div class="footer-socials">
+          <a
+            href="https://github.com/WANI-OWAIS"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/owaishassanwani/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="mailto:owaishassanwani@gmail.com" aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
       </div>
-    </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#header" id="backToTop" aria-label="Back to top"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
 
     <!-- JS -->
     <script src="script.js"></script>
